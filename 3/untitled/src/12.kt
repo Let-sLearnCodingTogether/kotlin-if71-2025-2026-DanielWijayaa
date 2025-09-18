@@ -9,4 +9,5 @@ fun main() {
     print(d)
     print(e)
     print(f)
+    print("apel"<"Kacang")
 }
