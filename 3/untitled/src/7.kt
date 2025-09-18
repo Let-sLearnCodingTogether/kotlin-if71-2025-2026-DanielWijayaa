@@ -1,6 +1,6 @@
-fun prinrMessage(message: String):Unit{
+fun printMessage(message: String):Unit{
     print(message)
 }
 fun main() {
-    prinrMessage("hai")
+    printMessage("hai")
 }
