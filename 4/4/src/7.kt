@@ -7,4 +7,5 @@ fun main() {
     val range5=1000..0 step 5
     println(range2.first)
     println(range5.first)
+    println(range2.toList()[6])
 }
