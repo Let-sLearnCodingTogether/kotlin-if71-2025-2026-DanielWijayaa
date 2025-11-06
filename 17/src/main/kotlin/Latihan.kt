@@ -23,17 +23,24 @@ open class Programmer(nama: String,Gaji_dasar: Double): Pegawai(nama,Gaji_dasar)
 }
 
 fun main() {
-    Programmer("DanielWijaya",90000.00).hitungGaji()
-    Manager("Lazu",1000000000.00).hitungGaji()
-    val list=mutableListOf<Pegawai>(Programmer("DanielWijaya",2000.00), Programmer("Lazu",100.00))
+    val program1=Programmer("DanielWijaya",90000.00)
+    val manager=Manager("Lazu",1000000000.00)
+    val listPegawai= mutableListOf<Pegawai>(program1,manager)
+    listPegawai.forEach { it.hitungGaji() }
+
+
     val list1=mutableListOf<Programmer>(Programmer("DanielWijaya",2000.00), Programmer("Lazu",100.00))
-    for(a in list)
-    {
-        a.hitungGaji()
-    }
-    for(b in list1)
-    {
-        b.hitungGaji()
-    }
+    val list=mutableListOf<Pegawai>(Programmer("DanielWijaya",2000.00), Programmer("Lazu",100.00))
+    val list3=mutableListOf<Pegawai>(Manager("dawi",11.00), Programmer("cewek",90))
+    list.forEach { it.hitungGaji() }
+    list1.forEach { it.hitungGaji() }
+//    for(a in list)
+//    {
+//        a.hitungGaji()
+//    }
+//    for(b in list1)
+//    {
+//        b.hitungGaji()
+//    }
 
 }
